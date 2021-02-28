@@ -1,0 +1,80 @@
+﻿<Window x:Class="FcomGui.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FcomGui"
+        mc:Ignorable="d"
+        Title="About FCOM" Height="470" Width="360"
+        WindowStyle="ToolWindow">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock FontSize="10"/>
+        <TextBlock FontSize="15" FontWeight="Bold">FCOM</TextBlock>
+        <TextBlock FontSize="12" FontStyle="Italic">
+            The Discord message forwarder for online flightsim networks <LineBreak/>
+        </TextBlock>
+        <TextBlock>
+            GUI build 20190329 <LineBreak/>
+            Client version
+            <TextBlock Text="{StaticResource client_version}"/>
+        </TextBlock>
+        <TextBlock></TextBlock>
+        <TextBlock>
+            Copyright ©2019 <Hyperlink NavigateUri="https://github.com/norrisng/" RequestNavigate="Hyperlink_RequestNavigate">Norris Ng</Hyperlink><LineBreak/>
+            Licensed under the GNU General Public License, version 3.0<LineBreak/><LineBreak/>
+            
+            <Bold>Third-party libraries</Bold><LineBreak/>
+            <Span FontSize="10">
+            <Hyperlink NavigateUri="https://github.com/chmorgan/sharppcap" RequestNavigate="Hyperlink_RequestNavigate">SharpPcap</Hyperlink> by Chris Morgan <LineBreak/>
+            <Hyperlink NavigateUri="http://restsharp.org/" RequestNavigate="Hyperlink_RequestNavigate">RestSharp</Hyperlink> by RestSharp contributors
+            </Span>
+        </TextBlock>
+        <TextBlock></TextBlock>
+        <TextBlock>
+            <Bold>Early testers</Bold><LineBreak/>
+            <Span FontSize="10">
+                Britannia, Grant, Mark Doyle (Pritt)  <LineBreak/>
+            </Span>
+        </TextBlock>
+        <TextBlock>
+            <Bold>Logo</Bold><LineBreak/>
+            <Span FontSize="10">
+                Britannia           <LineBreak/>
+            </Span>
+        </TextBlock>
+        <TextBlock>
+            <Bold>Closed beta testers</Bold><LineBreak/>
+            <Span FontSize="10">
+            <Grid HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0">
+                    Agera					<LineBreak/>
+                    AidasP					<LineBreak/>
+                    Avalanche				<LineBreak/>
+                    Barbate Brandon			<LineBreak/>
+                    Elias					<LineBreak/>
+                    flightcode				<LineBreak/>
+                    Ka Hei Zheng			<LineBreak/>
+                </TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" Padding="30"/>
+                <TextBlock Grid.Row="0" Grid.Column="2">
+                    Pronoun					<LineBreak/>
+                    Sterling P. (bantha121)	<LineBreak/>
+                    Tafia					<LineBreak/>
+                    Tivec					<LineBreak/>
+                    triplesevenbob			<LineBreak/>
+                    Vikaas					<LineBreak/>
+                    Zack					<LineBreak/>
+                </TextBlock>
+            </Grid>
+            </Span>
+        </TextBlock>        
+    </StackPanel>
+</Window>
